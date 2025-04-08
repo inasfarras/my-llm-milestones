@@ -34,18 +34,18 @@ const statusColors = {
 };
 
 export default function MilestoneDetail({ project, onBack }: MilestoneDetailProps) {
-  const { updateProjectStatus, projects: contextProjects, stats } = useProjects();
+  const { updateProjectStatus, stats } = useProjects();
   
   // Get the current status from the context to ensure we're showing the latest state
-  const projectInContext = contextProjects.find(p => p.id === project.id);
+  const projectInContext = useProjects().projects.find((p: Project) => p.id === project.id);
   const [currentStatus, setCurrentStatus] = useState<'Completed' | 'In Progress' | 'Not Started'>(
     projectInContext?.status || project.status
   );
   
   // Calculate where this project is in the overall journey
   const currentMonth = project.month;
-  const projectsInMonth = contextProjects.filter(p => p.month === currentMonth);
-  const projectsIndex = projectsInMonth.findIndex(p => p.id === project.id);
+  const projectsInMonth = useProjects().projects.filter((p: Project) => p.month === currentMonth);
+  const projectsIndex = projectsInMonth.findIndex((p: Project) => p.id === project.id);
   const progress = stats.completedPercentage;
   
   const handleStatusChange = (newStatus: 'Completed' | 'In Progress' | 'Not Started') => {

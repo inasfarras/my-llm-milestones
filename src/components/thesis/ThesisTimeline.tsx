@@ -90,7 +90,7 @@ export default function ThesisTimeline({ milestones }: ThesisTimelineProps) {
                 />
                 
                 {/* Content card */}
-                <div className={`p-6 bg-background-dark rounded-lg shadow-lg border border-gray-800 hover:shadow-${milestone.status === 'Completed' ? 'success' : milestone.status === 'In Progress' ? 'blue-500' : 'gray-600'}/5 transition-shadow relative ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
+                <div className={`p-6 bg-background-dark rounded-lg shadow-lg border border-gray-800 hover:shadow-lg transition-shadow relative ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
                   {/* Status indicator strip */}
                   <div className={`absolute top-0 ${index % 2 === 0 ? 'right-0' : 'left-0'} w-2 h-full ${statusColors[milestone.status]} rounded-l-lg`}></div>
                   
