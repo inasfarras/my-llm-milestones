@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My LLM Specialist Journey
 
-## Getting Started
+A personal journey tracker built with Next.js to document my path to becoming an LLM (Large Language Model) specialist. This interactive web application helps track progress through various milestones, projects, and learning objectives over a 5-month intensive learning period.
 
-First, run the development server:
+![Project Status](https://img.shields.io/badge/status-in_progress-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Features
+
+- **Interactive Roadmap**: Visual timeline of the learning journey with month-by-month progression
+- **Project Milestones**: Track individual projects with status updates and key learnings
+- **Thesis Progress**: Monitor thesis development with timeline and milestone tracking
+- **Progress Dashboard**: Real-time statistics and progress visualization
+- **Responsive Design**: Beautiful, dark-themed UI that works on all devices
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Heroicons](https://heroicons.com/)
+- **State Management**: React Context
+- **Type Safety**: TypeScript
+
+## 📋 Project Structure
+
+```
+src/
+├── app/                  # Next.js app router pages
+├── components/          
+│   ├── home/            # Home page components
+│   ├── roadmap/         # Roadmap visualization
+│   ├── milestones/      # Project milestone tracking
+│   ├── thesis/          # Thesis progress components
+│   └── ui/              # Reusable UI components
+├── context/             # React Context providers
+└── data/               # Project and roadmap data
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/inasfarras/my-llm-milestones.git
+   cd my-llm-milestones
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Open [http://localhost:3000](http://localhost:3000)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Features Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Roadmap
+- 5-month structured learning path
+- Visual progress tracking
+- Month-by-month milestone breakdown
 
-## Deploy on Vercel
+### Projects
+- Status tracking (Completed, In Progress, Not Started)
+- Key learnings for each project
+- Technology stack information
+- GitHub repository links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Thesis Progress
+- Timeline visualization
+- Status updates
+- Research milestone tracking
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Learning Journey
+
+The project tracks progress through various areas:
+- Machine Learning Fundamentals
+- LLM Architecture and Theory
+- Prompt Engineering
+- Fine-tuning Techniques
+- Multi-Agent Systems
+- Practical Applications
+
+## 📈 Progress Tracking
+
+- Visual progress indicators
+- Status updates for each milestone
+- Overall completion percentage
+- Monthly progress breakdown
+
+## 🤝 Contributing
+
+While this is a personal journey tracker, suggestions and feedback are welcome! Feel free to:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Vercel for hosting and deployment
+- Open source community for inspiration
+
+---
+
+Built with ❤️ by [Inas Farras](https://github.com/inasfarras)
