@@ -57,7 +57,7 @@ export default function RoadmapTimeline() {
     <div className="max-w-6xl mx-auto px-4 py-4">
       {/* Month navigation */}
       <div className="flex justify-center gap-3 flex-wrap mb-12">
-        {months.map((month, index) => (
+        {months.map((month) => (
           <button
             key={`nav-${month}`}
             onClick={() => handleMonthClick(month)}
@@ -114,7 +114,7 @@ export default function RoadmapTimeline() {
             
             {/* Month timeline items */}
             <div className="relative">
-              {monthGroups[month].map((item, index) => (
+              {monthGroups[month].map((item) => (
                 <RoadmapItem 
                   key={item.id} 
                   item={item} 

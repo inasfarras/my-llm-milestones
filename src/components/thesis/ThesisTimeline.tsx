@@ -14,12 +14,6 @@ const statusColors = {
   'Not Started': 'bg-gray-600',
 };
 
-const statusBackgrounds = {
-  'Completed': 'bg-success/10 border-success/30',
-  'In Progress': 'bg-blue-500/10 border-blue-500/30',
-  'Not Started': 'bg-gray-600/10 border-gray-600/30',
-};
-
 export default function ThesisTimeline({ milestones }: ThesisTimelineProps) {
   const { updateMilestoneStatus, stats } = useThesis();
   

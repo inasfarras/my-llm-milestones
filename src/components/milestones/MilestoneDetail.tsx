@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Project, projects } from '@/data/projects';
+import { Project } from '@/data/projects';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeftIcon, CheckIcon, ClockIcon, BookmarkIcon, CalendarDaysIcon, CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
