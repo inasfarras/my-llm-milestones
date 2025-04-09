@@ -62,12 +62,20 @@ export default function MilestoneDetail({ project, onBack }: MilestoneDetailProp
       exit={{ opacity: 0 }}
       className="bg-background-darker rounded-xl border border-gray-800 shadow-xl overflow-hidden"
     >
+      {/* Title section */}
+      {/* <div className="p-4 border-b border-gray-800">
+        <h1 className="text-2xl font-bold text-text-primary">
+          {project.title} - Milestone Details
+        </h1>
+      </div> */}
+
       {/* Project header with background pattern */}
       <div className="bg-gradient-to-r from-background-dark to-background-darker p-8 relative overflow-hidden border-b border-gray-800">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#7b60bc_1px,transparent_1px)] [background-size:20px_20px]"></div>
+          
         </div>
-        
+          
         <div className="relative z-10">
           <div className="flex justify-between items-start mb-6">
             <button 
@@ -89,7 +97,7 @@ export default function MilestoneDetail({ project, onBack }: MilestoneDetailProp
           
           <div className="flex items-center gap-3 mb-3">
             {project.icon && <span className="text-4xl bg-background-dark p-3 rounded-md border border-gray-800">{project.icon}</span>}
-            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{project.title}</h2>
+            <h2 className="text-3xl font-bold text-white">{project.title}</h2>
           </div>
           
           <div className="flex items-center gap-3 mt-6">
