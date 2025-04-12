@@ -1,12 +1,12 @@
 'use client';
 
-import { useProjects } from '@/context/ProjectContext';
+import { useMilestones } from '@/context/MilestoneContext';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export default function HeroSection() {
-  const { stats } = useProjects();
+  const { stats } = useMilestones();
 
   return (
     <section className="py-20 px-4 md:px-0 relative">

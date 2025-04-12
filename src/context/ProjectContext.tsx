@@ -1,11 +1,11 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Project, projects as initialProjects } from '@/data/projects';
+import { Milestone, milestones as initialMilestones } from '@/data/projects';
 
-interface ProjectContextType {
-  projects: Project[];
-  updateProjectStatus: (projectId: string, newStatus: 'Completed' | 'In Progress' | 'Not Started') => void;
+interface MilestoneContextType {
+  milestones: Milestone[];
+  updateMilestoneStatus: (milestoneId: string, newStatus: 'Completed' | 'In Progress' | 'Not Started') => void;
   stats: {
     completed: number;
     inProgress: number;
@@ -15,51 +15,51 @@ interface ProjectContextType {
   };
 }
 
-const ProjectContext = createContext<ProjectContextType | undefined>(undefined);
+const MilestoneContext = createContext<MilestoneContextType | undefined>(undefined);
 
-interface ProjectProviderProps {
+interface MilestoneProviderProps {
   children: ReactNode;
 }
 
-export const ProjectProvider = ({ children }: ProjectProviderProps) => {
-  const [projects, setProjects] = useState<Project[]>(initialProjects);
+export const MilestoneProvider = ({ children }: MilestoneProviderProps) => {
+  const [milestones, setMilestones] = useState<Milestone[]>(initialMilestones);
   const [stats, setStats] = useState({
     completed: 0,
     inProgress: 0,
     notStarted: 0,
-    total: initialProjects.length,
+    total: initialMilestones.length,
     completedPercentage: 0,
   });
   
-  // Calculate stats whenever projects change
+  // Calculate stats whenever milestones change
   useEffect(() => {
-    const completed = projects.filter(p => p.status === 'Completed').length;
-    const inProgress = projects.filter(p => p.status === 'In Progress').length;
-    const notStarted = projects.filter(p => p.status === 'Not Started').length;
+    const completed = milestones.filter(p => p.status === 'Completed').length;
+    const inProgress = milestones.filter(p => p.status === 'In Progress').length;
+    const notStarted = milestones.filter(p => p.status === 'Not Started').length;
     
     setStats({
       completed,
       inProgress,
       notStarted,
-      total: projects.length,
-      completedPercentage: Math.round((completed / projects.length) * 100)
+      total: milestones.length,
+      completedPercentage: Math.round((completed / milestones.length) * 100)
     });
-  }, [projects]);
+  }, [milestones]);
   
-  const updateProjectStatus = (projectId: string, newStatus: 'Completed' | 'In Progress' | 'Not Started') => {
-    setProjects(prevProjects => 
-      prevProjects.map(project => 
-        project.id === projectId 
-          ? { ...project, status: newStatus } 
-          : project
+  const updateMilestoneStatus = (milestoneId: string, newStatus: 'Completed' | 'In Progress' | 'Not Started') => {
+    setMilestones(prevMilestones => 
+      prevMilestones.map(milestone => 
+        milestone.id === milestoneId 
+          ? { ...milestone, status: newStatus } 
+          : milestone
       )
     );
     
-    // Store updated projects in localStorage with current state
+    // Store updated milestones in localStorage with current state
     try {
-      const updatedProjects = projects.map(p => p.id === projectId ? { ...p, status: newStatus } : p);
-      localStorage.setItem('projectStatuses', JSON.stringify(
-        updatedProjects.map(p => ({ id: p.id, status: p.status }))
+      const updatedMilestones = milestones.map(m => m.id === milestoneId ? { ...m, status: newStatus } : m);
+      localStorage.setItem('milestoneStatuses', JSON.stringify(
+        updatedMilestones.map(m => ({ id: m.id, status: m.status }))
       ));
     } catch (error) {
       console.error('Error saving to localStorage:', error);
@@ -69,16 +69,16 @@ export const ProjectProvider = ({ children }: ProjectProviderProps) => {
   // Load saved statuses from localStorage on initial load
   useEffect(() => {
     try {
-      const savedStatuses = localStorage.getItem('projectStatuses');
+      const savedStatuses = localStorage.getItem('milestoneStatuses') || localStorage.getItem('projectStatuses');
       
       if (savedStatuses) {
         const parsedStatuses = JSON.parse(savedStatuses) as { id: string; status: 'Completed' | 'In Progress' | 'Not Started' }[];
         
-        // Apply saved statuses to projects
-        setProjects(prevProjects => 
-          prevProjects.map(project => {
-            const savedStatus = parsedStatuses.find(s => s.id === project.id);
-            return savedStatus ? { ...project, status: savedStatus.status } : project;
+        // Apply saved statuses to milestones
+        setMilestones(prevMilestones => 
+          prevMilestones.map(milestone => {
+            const savedStatus = parsedStatuses.find(s => s.id === milestone.id);
+            return savedStatus ? { ...milestone, status: savedStatus.status } : milestone;
           })
         );
       }
@@ -88,16 +88,22 @@ export const ProjectProvider = ({ children }: ProjectProviderProps) => {
   }, []);
   
   return (
-    <ProjectContext.Provider value={{ projects, updateProjectStatus, stats }}>
+    <MilestoneContext.Provider value={{ milestones, updateMilestoneStatus, stats }}>
       {children}
-    </ProjectContext.Provider>
+    </MilestoneContext.Provider>
   );
 };
 
-export const useProjects = () => {
-  const context = useContext(ProjectContext);
+// For backwards compatibility
+export const ProjectProvider = MilestoneProvider;
+
+export const useMilestones = () => {
+  const context = useContext(MilestoneContext);
   if (context === undefined) {
-    throw new Error('useProjects must be used within a ProjectProvider');
+    throw new Error('useMilestones must be used within a MilestoneProvider');
   }
   return context;
-}; 
+};
+
+// For backwards compatibility
+export const useProjects = useMilestones; 

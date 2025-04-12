@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useProjects } from '@/context/ProjectContext';
+import { useMilestones } from '@/context/MilestoneContext';
 
 export type Status = 'Completed' | 'In Progress' | 'Not Started';
 
@@ -50,15 +50,15 @@ export default function Card({
   month,
   icon,
 }: CardProps) {
-  const { updateProjectStatus, projects } = useProjects();
+  const { updateMilestoneStatus, milestones } = useMilestones();
   const [currentStatus, setCurrentStatus] = useState<Status>(status);
   const [isEditing, setIsEditing] = useState(false);
 
-  // Update local status when project status changes in context
+  // Update local status when milestone status changes in context
   // This ensures the card reflects the current state from context
-  const projectInContext = id ? projects.find(p => p.id === id) : null;
-  if (projectInContext && projectInContext.status !== currentStatus) {
-    setCurrentStatus(projectInContext.status);
+  const milestoneInContext = id ? milestones.find(m => m.id === id) : null;
+  if (milestoneInContext && milestoneInContext.status !== currentStatus) {
+    setCurrentStatus(milestoneInContext.status);
   }
 
   const handleStatusChange = (newStatus: Status) => {
@@ -66,7 +66,7 @@ export default function Card({
     
     // Update the global state via context if we have an ID
     if (id) {
-      updateProjectStatus(id, newStatus);
+      updateMilestoneStatus(id, newStatus);
     }
     
     // Auto-close the edit mode after selection

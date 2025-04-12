@@ -510,11 +510,6 @@ const statusColors = {
     'In Progress': 'bg-blue-500',
     'Not Started': 'bg-gray-600'
 };
-const statusBackgrounds = {
-    'Completed': 'bg-success/10 border-success/30',
-    'In Progress': 'bg-blue-500/10 border-blue-500/30',
-    'Not Started': 'bg-gray-600/10 border-gray-600/30'
-};
 function ThesisTimeline({ milestones }) {
     const { updateMilestoneStatus, stats } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThesisContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useThesis"])();
     const handleStatusChange = (milestoneId, newStatus)=>{
@@ -530,7 +525,7 @@ function ThesisTimeline({ milestones }) {
                     children: "Thesis Development Progress"
                 }, void 0, false, {
                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                    lineNumber: 34,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -543,7 +538,7 @@ function ThesisTimeline({ milestones }) {
                                     children: "Overall Progress"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -553,13 +548,13 @@ function ThesisTimeline({ milestones }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                            lineNumber: 40,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -580,7 +575,7 @@ function ThesisTimeline({ milestones }) {
                                         className: "bg-success h-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 40,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -597,18 +592,18 @@ function ThesisTimeline({ milestones }) {
                                         className: "bg-blue-500 h-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 46,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                lineNumber: 45,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                            lineNumber: 44,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -621,7 +616,7 @@ function ThesisTimeline({ milestones }) {
                                             className: "w-3 h-3 rounded-full bg-success"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -632,13 +627,13 @@ function ThesisTimeline({ milestones }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -648,7 +643,7 @@ function ThesisTimeline({ milestones }) {
                                             className: "w-3 h-3 rounded-full bg-blue-500"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 62,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -659,13 +654,13 @@ function ThesisTimeline({ milestones }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -675,7 +670,7 @@ function ThesisTimeline({ milestones }) {
                                             className: "w-3 h-3 rounded-full bg-gray-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -686,32 +681,32 @@ function ThesisTimeline({ milestones }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                            lineNumber: 62,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                    lineNumber: 39,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-gray-700 to-secondary transform md:translate-x-0 translate-x-4 my-36"
                 }, void 0, false, {
                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                    lineNumber: 79,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -740,17 +735,17 @@ function ThesisTimeline({ milestones }) {
                   transform md:translate-x-4 -translate-x-4 z-10 shadow-lg`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 86,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `p-6 bg-background-dark rounded-lg shadow-lg border border-gray-800 hover:shadow-${milestone.status === 'Completed' ? 'success' : milestone.status === 'In Progress' ? 'blue-500' : 'gray-600'}/5 transition-shadow relative ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`,
+                                                className: `p-6 bg-background-dark rounded-lg shadow-lg border border-gray-800 hover:shadow-lg transition-shadow relative ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: `absolute top-0 ${index % 2 === 0 ? 'right-0' : 'left-0'} w-2 h-full ${statusColors[milestone.status]} rounded-l-lg`
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                        lineNumber: 101,
+                                                        lineNumber: 95,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -761,7 +756,7 @@ function ThesisTimeline({ milestones }) {
                                                                 children: milestone.date
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                lineNumber: 104,
+                                                                lineNumber: 98,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -771,14 +766,14 @@ function ThesisTimeline({ milestones }) {
                                                                         className: `inline-block w-3 h-3 rounded-full ${statusColors[milestone.status]}`
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                        lineNumber: 106,
+                                                                        lineNumber: 100,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     milestone.title
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                lineNumber: 105,
+                                                                lineNumber: 99,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -786,7 +781,7 @@ function ThesisTimeline({ milestones }) {
                                                                 children: milestone.description
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                lineNumber: 109,
+                                                                lineNumber: 103,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -798,7 +793,7 @@ function ThesisTimeline({ milestones }) {
                                                                         children: "Mark Completed"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                        lineNumber: 112,
+                                                                        lineNumber: 106,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -807,7 +802,7 @@ function ThesisTimeline({ milestones }) {
                                                                         children: "Mark In Progress"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                        lineNumber: 123,
+                                                                        lineNumber: 117,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -816,44 +811,44 @@ function ThesisTimeline({ milestones }) {
                                                                         children: "Mark Not Started"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                        lineNumber: 134,
+                                                                        lineNumber: 128,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                                lineNumber: 111,
+                                                                lineNumber: 105,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 97,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 93,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "md:w-1/2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 142,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, milestone.id, true, {
                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                lineNumber: 83,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -875,34 +870,34 @@ function ThesisTimeline({ milestones }) {
                                     children: "Thesis Defense"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 154,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                                lineNumber: 159,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                            lineNumber: 153,
+                            lineNumber: 147,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-                    lineNumber: 81,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-            lineNumber: 33,
+            lineNumber: 27,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/thesis/ThesisTimeline.tsx",
-        lineNumber: 31,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }

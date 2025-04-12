@@ -270,7 +270,7 @@ __turbopack_context__.s({
     "default": (()=>HeroSection)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/ProjectContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/MilestoneContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ArrowRightIcon.js [app-client] (ecmascript) <export default as ArrowRightIcon>");
@@ -283,7 +283,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 function HeroSection() {
     _s();
-    const { stats } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"])();
+    const { stats } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-20 px-4 md:px-0 relative",
         children: [
@@ -690,9 +690,9 @@ function HeroSection() {
         columnNumber: 5
     }, this);
 }
-_s(HeroSection, "1UnQ/AApbXa1J8UxAI0+tRG/yLY=", false, function() {
+_s(HeroSection, "whD7KDRJN2AQDOxN/dCY2Kdk+UE=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"]
     ];
 });
 _c = HeroSection;
@@ -714,7 +714,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/ProjectContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/MilestoneContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -739,20 +739,20 @@ const statusText = {
 };
 function Card({ id, title, description, status, githubLink, detailsLink, tags = [], onViewDetails, month, icon }) {
     _s();
-    const { updateProjectStatus, projects } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"])();
+    const { updateMilestoneStatus, milestones } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"])();
     const [currentStatus, setCurrentStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(status);
     const [isEditing, setIsEditing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // Update local status when project status changes in context
+    // Update local status when milestone status changes in context
     // This ensures the card reflects the current state from context
-    const projectInContext = id ? projects.find((p)=>p.id === id) : null;
-    if (projectInContext && projectInContext.status !== currentStatus) {
-        setCurrentStatus(projectInContext.status);
+    const milestoneInContext = id ? milestones.find((m)=>m.id === id) : null;
+    if (milestoneInContext && milestoneInContext.status !== currentStatus) {
+        setCurrentStatus(milestoneInContext.status);
     }
     const handleStatusChange = (newStatus)=>{
         setCurrentStatus(newStatus);
         // Update the global state via context if we have an ID
         if (id) {
-            updateProjectStatus(id, newStatus);
+            updateMilestoneStatus(id, newStatus);
         }
         // Auto-close the edit mode after selection
         setIsEditing(false);
@@ -986,9 +986,9 @@ function Card({ id, title, description, status, githubLink, detailsLink, tags = 
         columnNumber: 5
     }, this);
 }
-_s(Card, "DEwO2kYqiEshyASMXlbtO4ay1i8=", false, function() {
+_s(Card, "r0EptdjbgSdOyksEcZkIYsHH++Y=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"]
     ];
 });
 _c = Card;
@@ -1009,7 +1009,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/Card.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/ProjectContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/MilestoneContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowRightIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ArrowRightIcon.js [app-client] (ecmascript) <export default as ArrowRightIcon>");
 ;
@@ -1043,11 +1043,11 @@ const item = {
 };
 function ProjectGrid() {
     _s();
-    const { projects } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"])();
-    // Group projects by status
-    const completed = projects.filter((project)=>project.status === 'Completed');
-    const inProgress = projects.filter((project)=>project.status === 'In Progress');
-    const notStarted = projects.filter((project)=>project.status === 'Not Started').slice(0, 2); // Only show first two not started
+    const { milestones } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"])();
+    // Group milestones by status
+    const completed = milestones.filter((milestone)=>milestone.status === 'Completed');
+    const inProgress = milestones.filter((milestone)=>milestone.status === 'In Progress');
+    const notStarted = milestones.filter((milestone)=>milestone.status === 'Not Started').slice(0, 2); // Only show first two not started
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-20 px-4 sm:px-6 lg:px-8",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1323,9 +1323,9 @@ function ProjectGrid() {
         columnNumber: 5
     }, this);
 }
-_s(ProjectGrid, "kfEbqLLJ0KfHrjpqESBShH9c48k=", false, function() {
+_s(ProjectGrid, "bvEWwJHFBmxSgIs5z8Yu2X1ioJo=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ProjectContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useProjects"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$MilestoneContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMilestones"]
     ];
 });
 _c = ProjectGrid;

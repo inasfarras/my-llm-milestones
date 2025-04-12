@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ProjectProvider } from "@/context/ProjectContext";
+import { MilestoneProvider } from "@/context/MilestoneContext";
 import { ThesisProvider } from "@/context/ThesisContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} min-h-screen bg-gradient-to-b from-gray-900 to-black text-gray-100`}>
-        <ProjectProvider>
+        <MilestoneProvider>
           <ThesisProvider>
             {children}
           </ThesisProvider>
-        </ProjectProvider>
+        </MilestoneProvider>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@
 
 import Card from '@/components/ui/Card';
 import { motion } from 'framer-motion';
-import { useProjects } from '@/context/ProjectContext';
+import { useMilestones } from '@/context/MilestoneContext';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
@@ -22,12 +22,12 @@ const item = {
 };
 
 export default function ProjectGrid() {
-  const { projects } = useProjects();
+  const { milestones } = useMilestones();
   
-  // Group projects by status
-  const completed = projects.filter(project => project.status === 'Completed');
-  const inProgress = projects.filter(project => project.status === 'In Progress');
-  const notStarted = projects.filter(project => project.status === 'Not Started').slice(0, 2); // Only show first two not started
+  // Group milestones by status
+  const completed = milestones.filter(milestone => milestone.status === 'Completed');
+  const inProgress = milestones.filter(milestone => milestone.status === 'In Progress');
+  const notStarted = milestones.filter(milestone => milestone.status === 'Not Started').slice(0, 2); // Only show first two not started
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">

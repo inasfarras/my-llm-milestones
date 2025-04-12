@@ -1,7 +1,6 @@
-
 import { Status } from '@/components/ui/Card';
 
-export interface Project {
+export interface Milestone {
   id: string;
   title: string;
   description: string;
@@ -11,226 +10,263 @@ export interface Project {
   detailsLink?: string;
   month: number;
   icon: string;
-  keyLearnings?: string[];
-  isBonus?: boolean; // <-- NEW: to mark extra optional projects
+  roadmapId: string; // NEW: connect project to big roadmap
+  codeSnippets?: Array<{
+    title: string;
+    language: string;
+    code: string;
+  }>;
+  githubResources?: Array<{
+    title: string;
+    description: string;
+    url: string;
+  }>;
 }
 
-export const projects: Project[] = [
-  // Month 1 - Foundations
+export const milestones: Milestone[] = [
+  // Month 1: Python Mastery
   {
-    id: 'textcrunch',
-    title: 'TextCrunch',
-    description: 'CLI app to tokenize text and count word frequencies.',
+    id: 'calculator-app',
+    title: 'Calculator App',
+    description: 'Basic CLI calculator app (add, subtract, multiply, divide).',
     status: 'Completed',
-    tags: ['Python', 'NLP', 'CLI'],
-    githubLink: '#',
-    detailsLink: '/milestones/textcrunch',
+    tags: ['Python', 'CLI'],
+    githubLink: '',
+    detailsLink: '/milestones/calculator-app',
+    month: 1,
+    icon: '➗',
+    roadmapId: 'python-mastery',
+    codeSnippets: [
+      {
+        title: 'Basic Calculator Function',
+        language: 'python',
+        code: `def calculate(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        if num2 == 0:
+            return "Error: Division by zero"
+        return num1 / num2
+    else:
+        return "Error: Invalid operation"`
+      },
+      {
+        title: 'Main CLI Interface',
+        language: 'python',
+        code: `def main():
+    print("Welcome to Calculator App")
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            op = input("Enter operation (+, -, *, /): ")
+            
+            result = calculate(num1, num2, op)
+            print(f"Result: {result}")
+            
+            again = input("Calculate again? (y/n): ")
+            if again.lower() != 'y':
+                break
+        except ValueError:
+            print("Error: Please enter valid numbers")
+            
+if __name__ == "__main__":
+    main()`
+      }
+    ],
+    githubResources: [
+      {
+        title: "Python Calculator Repository",
+        description: "Source code for the calculator application with additional features",
+        url: "https://github.com/example/python-calculator"
+      },
+      {
+        title: "Python CLI Best Practices",
+        description: "Guide for building command-line interfaces in Python",
+        url: "https://github.com/example/python-cli-practices"
+      }
+    ]
+  },
+  {
+    id: 'todo-app',
+    title: 'To-Do List App',
+    description: 'CLI app to manage tasks with add/remove/view features.',
+    status: 'Completed',
+    tags: ['Python', 'CLI'],
+    githubLink: '',
+    detailsLink: '/milestones/todo-app',
     month: 1,
     icon: '📝',
-    keyLearnings: [
-      'Python basics for text processing',
-      'Command-line interface development',
-      'Basic natural language processing techniques',
-      'Word frequency analysis and tokenization'
-    ]
+    roadmapId: 'python-mastery'
   },
   {
-    id: 'spamguard',
-    title: 'SpamGuard',
-    description: 'A text classifier for spam detection using scikit-learn.',
-    status: 'Not Started',
-    tags: ['Python', 'Scikit-learn', 'ML', 'Classification'],
-    githubLink: '#',
-    detailsLink: '/milestones/spamguard',
-    month: 1,
-    icon: '🛡️',
-    keyLearnings: [
-      'Machine learning basics',
-      'Text classification techniques',
-      'Feature extraction from text',
-      'Model evaluation and performance metrics'
-    ]
-  },
-
-  // Month 2 - Transformers & Prompting
-  {
-    id: 'quickchat',
-    title: 'QuickChat',
-    description: 'Build a chatbot using OpenAI API or HuggingFace Inference API.',
-    status: 'In Progress',
-    tags: ['Python', 'FastAPI', 'LLM', 'API Integration'],
-    githubLink: '#',
-    detailsLink: '/milestones/quickchat',
-    month: 2,
-    icon: '💬',
-    keyLearnings: [
-      'API integration with LLM services',
-      'Basic LLM usage and limitations',
-      'Simple frontend development',
-      'Handling user inputs and responses'
-    ]
-  },
-  {
-    id: 'promptforge',
-    title: 'PromptForge',
-    description: 'Design few-shot and chain-of-thought prompt templates for smarter LLM outputs.',
-    status: 'Not Started',
-    tags: ['Prompt Engineering', 'LLM', 'Few-shot Learning'],
-    githubLink: '#',
-    detailsLink: '/milestones/promptforge',
-    month: 2,
-    icon: '⚒️',
-    keyLearnings: [
-      'Prompt engineering techniques',
-      'Few-shot learning patterns',
-      'Chain-of-thought prompting',
-      'Creative LLM usage strategies'
-    ]
-  },
-
-  // Month 3 - Fine-Tuning & Thesis Proposal
-  {
-    id: 'finetunex',
-    title: 'FineTuneX',
-    description: 'Fine-tune a small model like T5 or DistilBERT for a specific task.',
+    id: 'temperature-converter',
+    title: 'Temperature Converter',
+    description: 'OOP-based CLI app to convert Celsius, Fahrenheit, Kelvin.',
     status: 'Completed',
-    tags: ['Python', 'PyTorch', 'HuggingFace', 'Fine-tuning'],
-    githubLink: '#',
-    detailsLink: '/milestones/finetunex',
-    month: 3,
-    icon: '🔧',
-    keyLearnings: [
-      'HuggingFace Transformers library',
-      'Model fine-tuning workflows',
-      'Supervised learning for NLP tasks',
-      'Performance optimization for transformer models'
-    ]
+    tags: ['Python', 'OOP'],
+    githubLink: '',
+    detailsLink: '/milestones/temperature-converter',
+    month: 1,
+    icon: '🌡️',
+    roadmapId: 'python-mastery'
   },
   {
-    id: 'thesis-proposal',
-    title: 'Thesis Proposal',
-    description: 'Finalize and submit your Master Thesis Proposal related to Reasoning-Augmented Retrieval systems.',
-    status: 'Not Started',
-    tags: ['Research', 'Academic Writing', 'LLM'],
-    githubLink: '#',
-    detailsLink: '/milestones/thesis-proposal',
-    month: 3,
-    icon: '📚',
-    keyLearnings: [
-      'Research writing skills',
-      'Academic planning and methodology',
-      'Literature review techniques',
-      'Research question formulation'
-    ]
-  },
-
-  // Month 4 - Model Deployment & RAG Systems
-  {
-    id: 'modelserve',
-    title: 'ModelServe',
-    description: 'Deploy your fine-tuned model using FastAPI.',
-    status: 'Not Started',
-    tags: ['Python', 'FastAPI', 'Deployment', 'MLOps'],
-    githubLink: '#',
-    detailsLink: '/milestones/modelserve',
-    month: 4,
-    icon: '🚀',
-    keyLearnings: [
-      'Model serving best practices',
-      'API design and development',
-      'Backend architecture fundamentals',
-      'Deployment workflows'
-    ]
-  },
-  {
-    id: 'docuchat',
-    title: 'DocuChat',
-    description: 'Build a basic Retrieval-Augmented Generation (RAG) system using FAISS. Serve as a foundation for Reasoning-Augmented Retrieval.',
-    status: 'Not Started',
-    tags: ['Python', 'RAG', 'FAISS', 'Vector Database'],
-    githubLink: '#',
-    detailsLink: '/milestones/docuchat',
-    month: 4,
-    icon: '🔍',
-    keyLearnings: [
-      'Retrieval-Augmented Generation architecture',
-      'Vector embeddings and similarity search',
-      'FAISS for efficient vector storage',
-      'Foundations for Reasoning-Augmented Retrieval systems'
-    ]
-  },
-
-  // Month 5 - Reasoning-Augmented Retrieval & Thesis Finalization
-  {
-    id: 'agenthive',
-    title: 'AgentHive',
-    description: 'Design and build a Reasoning-Augmented Retrieval System using multi-agent architecture (Planner → Retriever → Reasoner → Synthesizer).',
-    status: 'Not Started',
-    tags: ['Python', 'Multi-Agent', 'LangChain', 'Reasoning-Augmented Retrieval'],
-    githubLink: '#',
-    detailsLink: '/milestones/agenthive',
-    month: 5,
-    icon: '🐝',
-    keyLearnings: [
-      'Reasoning before retrieval techniques',
-      'Multi-agent system design for LLMs',
-      'LangChain multi-agent architecture',
-      'Advanced RAG system design'
-    ]
-  },
-  {
-    id: 'thesis-finalization',
-    title: 'Thesis Finalization',
-    description: 'Complete Master Thesis — Reasoning-Augmented Retrieval system experiments, writing, and defense preparation.',
-    status: 'Not Started',
-    tags: ['Research', 'Academic Writing', 'LLM', 'Experimentation'],
-    githubLink: '#',
-    detailsLink: '/milestones/thesis-finalization',
-    month: 5,
+    id: 'grade-tracker',
+    title: 'Student Grade Tracker',
+    description: 'Track student grades and save/load data to JSON files.',
+    status: 'Completed',
+    tags: ['Python', 'OOP', 'JSON'],
+    githubLink: '',
+    detailsLink: '/milestones/grade-tracker',
+    month: 1,
     icon: '🎓',
-    keyLearnings: [
-      'Executing full research cycle',
-      'Experimental design and evaluation',
-      'Formal academic writing',
-      'Thesis presentation skills'
+    roadmapId: 'python-mastery'
+  },
+  {
+    id: 'bakery-system',
+    title: 'Bakery Management System',
+    description: 'Advanced OOP project to manage customers, products, orders, and transactions.',
+    status: 'Completed',
+    tags: ['Python', 'OOP', 'Inventory'],
+    githubLink: '',
+    detailsLink: '/milestones/bakery-system',
+    month: 1,
+    icon: '🍞',
+    roadmapId: 'python-mastery'
+  },
+  {
+    id: 'news-scraper',
+    title: 'News Scraper',
+    description: 'Web scraper to fetch latest news headlines using BeautifulSoup.',
+    status: 'Not Started',
+    tags: ['Python', 'Web Scraping'],
+    githubLink: '',
+    detailsLink: '/milestones/news-scraper',
+    month: 1,
+    icon: '📰',
+    roadmapId: 'python-mastery'
+  },
+  {
+    id: 'weather-api-app',
+    title: 'Weather API App',
+    description: 'Fetch real-time weather data using OpenWeatherMap API.',
+    status: 'Not Started',
+    tags: ['Python', 'API'],
+    githubLink: '',
+    detailsLink: '/milestones/weather-api-app',
+    month: 1,
+    icon: '🌦️',
+    roadmapId: 'python-mastery'
+  },
+
+  // Month 2: ML Basics
+  {
+    id: 'titanic-ml',
+    title: 'Titanic Survival Predictor',
+    description: 'Build an ML model to predict survival on the Titanic dataset.',
+    status: 'Not Started',
+    tags: ['ML', 'Pandas', 'scikit-learn'],
+    githubLink: '',
+    detailsLink: '/milestones/titanic-ml',
+    month: 2,
+    icon: '🚢',
+    roadmapId: 'ml-basics'
+  },
+  {
+    id: 'spam-classifier',
+    title: 'Spam Classifier',
+    description: 'Train a logistic regression model to classify spam emails.',
+    status: 'Not Started',
+    tags: ['ML', 'Classification'],
+    githubLink: '',
+    detailsLink: '/milestones/spam-classifier',
+    month: 2,
+    icon: '📧',
+    roadmapId: 'ml-basics'
+  },
+
+  // Month 3: Deep Learning
+  {
+    id: 'mnist-classifier',
+    title: 'MNIST Handwritten Digit Classifier',
+    description: 'Train a neural network to classify handwritten digits.',
+    status: 'Not Started',
+    tags: ['PyTorch', 'Deep Learning'],
+    githubLink: '',
+    detailsLink: '/milestones/mnist-classifier',
+    month: 3,
+    icon: '✍️',
+    roadmapId: 'deep-learning'
+  },
+  {
+    id: 'cats-dogs-cnn',
+    title: 'Cats vs Dogs Image Classifier',
+    description: 'Build a CNN to classify images of cats and dogs.',
+    status: 'Not Started',
+    tags: ['PyTorch', 'CNN'],
+    githubLink: '',
+    detailsLink: '/milestones/cats-dogs-cnn',
+    month: 3,
+    icon: '🐶',
+    roadmapId: 'deep-learning'
+  },
+
+  // Month 4: LLM Fine-tuning
+  {
+    id: 'gpt2-finetune',
+    title: 'Fine-Tune GPT-2',
+    description: 'Fine-tune a GPT-2 model on a custom text dataset.',
+    status: 'Not Started',
+    tags: ['Transformers', 'HuggingFace'],
+    githubLink: '',
+    detailsLink: '/milestones/gpt2-finetune',
+    month: 4,
+    icon: '🧠',
+    roadmapId: 'llm-finetuning',
+    githubResources: [
+      {
+        title: "Project Repository",
+        description: "Main GitHub repository for the LLM Learning Journey project",
+        url: "https://github.com/inasfarras/my-llm-milestones"
+      },
+      {
+        title: "Live Demo",
+        description: "Live deployment of the project on Vercel",
+        url: "https://my-llm-milestones.vercel.app"
+      }
     ]
   },
 
-  // Bonus (Optional) Projects
+  // Month 4: RAG Systems
   {
-    id: 'qlora-finetuning',
-    title: 'QLoRA Fine-tuning',
-    description: 'Implement QLoRA fine-tuning on a bigger model (LLaMA 2 7B, Mistral).',
+    id: 'rag-bot',
+    title: 'RAG QA Chatbot',
+    description: 'Build a chatbot that retrieves documents using vector embeddings.',
     status: 'Not Started',
-    tags: ['Python', 'QLoRA', 'Parameter-Efficient Fine-tuning', 'Large LMs'],
-    githubLink: '#',
-    detailsLink: '/milestones/qlora-finetuning',
-    month: 5,
-    icon: '🔬',
-    keyLearnings: [
-      'Quantized low-rank adaptation techniques',
-      'Working with larger language models',
-      'Advanced fine-tuning strategies',
-      'Memory optimization for LLM training'
-    ],
-    isBonus: true
+    tags: ['RAG', 'FAISS', 'LangChain'],
+    githubLink: '',
+    detailsLink: '/milestones/rag-bot',
+    month: 4,
+    icon: '📄',
+    roadmapId: 'rag-systems'
   },
+
+  // Month 5: AI Agents
   {
-    id: 'langchain-agent',
-    title: 'LangChain Memory Agent',
-    description: 'Build a LangChain Agent with a memory component (persistent knowledge).',
+    id: 'multi-agent-system',
+    title: 'Multi-Agent Reasoning System',
+    description: 'Create AI agents that reason, retrieve, and solve tasks collaboratively.',
     status: 'Not Started',
-    tags: ['Python', 'LangChain', 'Agent', 'Memory Systems'],
-    githubLink: '#',
-    detailsLink: '/milestones/langchain-agent',
+    tags: ['LangChain', 'Multi-Agent'],
+    githubLink: '',
+    detailsLink: '/milestones/multi-agent-system',
     month: 5,
-    icon: '🧠',
-    keyLearnings: [
-      'LangChain agent development',
-      'Memory components for LLM applications',
-      'Persistent knowledge management',
-      'Advanced agent architecture'
-    ],
-    isBonus: true
+    icon: '🤖',
+    roadmapId: 'ai-agents'
   }
 ];

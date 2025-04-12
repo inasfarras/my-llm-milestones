@@ -14,277 +14,228 @@ module.exports = mod;
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "projects": (()=>projects)
+    "milestones": (()=>milestones)
 });
-const projects = [
-    // Month 1 - Foundations
+const milestones = [
+    // Month 1: Python Mastery
     {
-        id: 'textcrunch',
-        title: 'TextCrunch',
-        description: 'CLI app to tokenize text and count word frequencies.',
+        id: 'calculator-app',
+        title: 'Calculator App',
+        description: 'Basic CLI calculator app (add, subtract, multiply, divide).',
         status: 'Completed',
         tags: [
             'Python',
-            'NLP',
             'CLI'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/textcrunch',
+        githubLink: '',
+        detailsLink: '/milestones/calculator-app',
         month: 1,
-        icon: '📝',
-        keyLearnings: [
-            'Python basics for text processing',
-            'Command-line interface development',
-            'Basic natural language processing techniques',
-            'Word frequency analysis and tokenization'
-        ]
+        icon: '➗',
+        roadmapId: 'python-mastery'
     },
     {
-        id: 'spamguard',
-        title: 'SpamGuard',
-        description: 'A text classifier for spam detection using scikit-learn.',
+        id: 'todo-app',
+        title: 'To-Do List App',
+        description: 'CLI app to manage tasks with add/remove/view features.',
+        status: 'Completed',
+        tags: [
+            'Python',
+            'CLI'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/todo-app',
+        month: 1,
+        icon: '📝',
+        roadmapId: 'python-mastery'
+    },
+    {
+        id: 'temperature-converter',
+        title: 'Temperature Converter',
+        description: 'OOP-based CLI app to convert Celsius, Fahrenheit, Kelvin.',
+        status: 'Completed',
+        tags: [
+            'Python',
+            'OOP'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/temperature-converter',
+        month: 1,
+        icon: '🌡️',
+        roadmapId: 'python-mastery'
+    },
+    {
+        id: 'grade-tracker',
+        title: 'Student Grade Tracker',
+        description: 'Track student grades and save/load data to JSON files.',
+        status: 'Completed',
+        tags: [
+            'Python',
+            'OOP',
+            'JSON'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/grade-tracker',
+        month: 1,
+        icon: '🎓',
+        roadmapId: 'python-mastery'
+    },
+    {
+        id: 'bakery-system',
+        title: 'Bakery Management System',
+        description: 'Advanced OOP project to manage customers, products, orders, and transactions.',
+        status: 'Completed',
+        tags: [
+            'Python',
+            'OOP',
+            'Inventory'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/bakery-system',
+        month: 1,
+        icon: '🍞',
+        roadmapId: 'python-mastery'
+    },
+    {
+        id: 'news-scraper',
+        title: 'News Scraper',
+        description: 'Web scraper to fetch latest news headlines using BeautifulSoup.',
         status: 'Not Started',
         tags: [
             'Python',
-            'Scikit-learn',
+            'Web Scraping'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/news-scraper',
+        month: 1,
+        icon: '📰',
+        roadmapId: 'python-mastery'
+    },
+    {
+        id: 'weather-api-app',
+        title: 'Weather API App',
+        description: 'Fetch real-time weather data using OpenWeatherMap API.',
+        status: 'Not Started',
+        tags: [
+            'Python',
+            'API'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/weather-api-app',
+        month: 1,
+        icon: '🌦️',
+        roadmapId: 'python-mastery'
+    },
+    // Month 2: ML Basics
+    {
+        id: 'titanic-ml',
+        title: 'Titanic Survival Predictor',
+        description: 'Build an ML model to predict survival on the Titanic dataset.',
+        status: 'Not Started',
+        tags: [
+            'ML',
+            'Pandas',
+            'scikit-learn'
+        ],
+        githubLink: '',
+        detailsLink: '/milestones/titanic-ml',
+        month: 2,
+        icon: '🚢',
+        roadmapId: 'ml-basics'
+    },
+    {
+        id: 'spam-classifier',
+        title: 'Spam Classifier',
+        description: 'Train a logistic regression model to classify spam emails.',
+        status: 'Not Started',
+        tags: [
             'ML',
             'Classification'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/spamguard',
-        month: 1,
-        icon: '🛡️',
-        keyLearnings: [
-            'Machine learning basics',
-            'Text classification techniques',
-            'Feature extraction from text',
-            'Model evaluation and performance metrics'
-        ]
-    },
-    // Month 2 - Transformers & Prompting
-    {
-        id: 'quickchat',
-        title: 'QuickChat',
-        description: 'Build a chatbot using OpenAI API or HuggingFace Inference API.',
-        status: 'In Progress',
-        tags: [
-            'Python',
-            'FastAPI',
-            'LLM',
-            'API Integration'
-        ],
-        githubLink: '#',
-        detailsLink: '/milestones/quickchat',
+        githubLink: '',
+        detailsLink: '/milestones/spam-classifier',
         month: 2,
-        icon: '💬',
-        keyLearnings: [
-            'API integration with LLM services',
-            'Basic LLM usage and limitations',
-            'Simple frontend development',
-            'Handling user inputs and responses'
-        ]
+        icon: '📧',
+        roadmapId: 'ml-basics'
     },
+    // Month 3: Deep Learning
     {
-        id: 'promptforge',
-        title: 'PromptForge',
-        description: 'Design few-shot and chain-of-thought prompt templates for smarter LLM outputs.',
+        id: 'mnist-classifier',
+        title: 'MNIST Handwritten Digit Classifier',
+        description: 'Train a neural network to classify handwritten digits.',
         status: 'Not Started',
         tags: [
-            'Prompt Engineering',
-            'LLM',
-            'Few-shot Learning'
-        ],
-        githubLink: '#',
-        detailsLink: '/milestones/promptforge',
-        month: 2,
-        icon: '⚒️',
-        keyLearnings: [
-            'Prompt engineering techniques',
-            'Few-shot learning patterns',
-            'Chain-of-thought prompting',
-            'Creative LLM usage strategies'
-        ]
-    },
-    // Month 3 - Fine-Tuning & Thesis Proposal
-    {
-        id: 'finetunex',
-        title: 'FineTuneX',
-        description: 'Fine-tune a small model like T5 or DistilBERT for a specific task.',
-        status: 'Completed',
-        tags: [
-            'Python',
             'PyTorch',
-            'HuggingFace',
-            'Fine-tuning'
+            'Deep Learning'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/finetunex',
+        githubLink: '',
+        detailsLink: '/milestones/mnist-classifier',
         month: 3,
-        icon: '🔧',
-        keyLearnings: [
-            'HuggingFace Transformers library',
-            'Model fine-tuning workflows',
-            'Supervised learning for NLP tasks',
-            'Performance optimization for transformer models'
-        ]
+        icon: '✍️',
+        roadmapId: 'deep-learning'
     },
     {
-        id: 'thesis-proposal',
-        title: 'Thesis Proposal',
-        description: 'Finalize and submit your Master Thesis Proposal related to Reasoning-Augmented Retrieval systems.',
+        id: 'cats-dogs-cnn',
+        title: 'Cats vs Dogs Image Classifier',
+        description: 'Build a CNN to classify images of cats and dogs.',
         status: 'Not Started',
         tags: [
-            'Research',
-            'Academic Writing',
-            'LLM'
+            'PyTorch',
+            'CNN'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/thesis-proposal',
+        githubLink: '',
+        detailsLink: '/milestones/cats-dogs-cnn',
         month: 3,
-        icon: '📚',
-        keyLearnings: [
-            'Research writing skills',
-            'Academic planning and methodology',
-            'Literature review techniques',
-            'Research question formulation'
-        ]
+        icon: '🐶',
+        roadmapId: 'deep-learning'
     },
-    // Month 4 - Model Deployment & RAG Systems
+    // Month 4: LLM Fine-tuning
     {
-        id: 'modelserve',
-        title: 'ModelServe',
-        description: 'Deploy your fine-tuned model using FastAPI.',
+        id: 'gpt2-finetune',
+        title: 'Fine-Tune GPT-2',
+        description: 'Fine-tune a GPT-2 model on a custom text dataset.',
         status: 'Not Started',
         tags: [
-            'Python',
-            'FastAPI',
-            'Deployment',
-            'MLOps'
+            'Transformers',
+            'HuggingFace'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/modelserve',
+        githubLink: '',
+        detailsLink: '/milestones/gpt2-finetune',
         month: 4,
-        icon: '🚀',
-        keyLearnings: [
-            'Model serving best practices',
-            'API design and development',
-            'Backend architecture fundamentals',
-            'Deployment workflows'
-        ]
+        icon: '🧠',
+        roadmapId: 'llm-finetuning'
     },
+    // Month 4: RAG Systems
     {
-        id: 'docuchat',
-        title: 'DocuChat',
-        description: 'Build a basic Retrieval-Augmented Generation (RAG) system using FAISS. Serve as a foundation for Reasoning-Augmented Retrieval.',
+        id: 'rag-bot',
+        title: 'RAG QA Chatbot',
+        description: 'Build a chatbot that retrieves documents using vector embeddings.',
         status: 'Not Started',
         tags: [
-            'Python',
             'RAG',
             'FAISS',
-            'Vector Database'
+            'LangChain'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/docuchat',
+        githubLink: '',
+        detailsLink: '/milestones/rag-bot',
         month: 4,
-        icon: '🔍',
-        keyLearnings: [
-            'Retrieval-Augmented Generation architecture',
-            'Vector embeddings and similarity search',
-            'FAISS for efficient vector storage',
-            'Foundations for Reasoning-Augmented Retrieval systems'
-        ]
+        icon: '📄',
+        roadmapId: 'rag-systems'
     },
-    // Month 5 - Reasoning-Augmented Retrieval & Thesis Finalization
+    // Month 5: AI Agents
     {
-        id: 'agenthive',
-        title: 'AgentHive',
-        description: 'Design and build a Reasoning-Augmented Retrieval System using multi-agent architecture (Planner → Retriever → Reasoner → Synthesizer).',
+        id: 'multi-agent-system',
+        title: 'Multi-Agent Reasoning System',
+        description: 'Create AI agents that reason, retrieve, and solve tasks collaboratively.',
         status: 'Not Started',
         tags: [
-            'Python',
-            'Multi-Agent',
             'LangChain',
-            'Reasoning-Augmented Retrieval'
+            'Multi-Agent'
         ],
-        githubLink: '#',
-        detailsLink: '/milestones/agenthive',
+        githubLink: '',
+        detailsLink: '/milestones/multi-agent-system',
         month: 5,
-        icon: '🐝',
-        keyLearnings: [
-            'Reasoning before retrieval techniques',
-            'Multi-agent system design for LLMs',
-            'LangChain multi-agent architecture',
-            'Advanced RAG system design'
-        ]
-    },
-    {
-        id: 'thesis-finalization',
-        title: 'Thesis Finalization',
-        description: 'Complete Master Thesis — Reasoning-Augmented Retrieval system experiments, writing, and defense preparation.',
-        status: 'Not Started',
-        tags: [
-            'Research',
-            'Academic Writing',
-            'LLM',
-            'Experimentation'
-        ],
-        githubLink: '#',
-        detailsLink: '/milestones/thesis-finalization',
-        month: 5,
-        icon: '🎓',
-        keyLearnings: [
-            'Executing full research cycle',
-            'Experimental design and evaluation',
-            'Formal academic writing',
-            'Thesis presentation skills'
-        ]
-    },
-    // Bonus (Optional) Projects
-    {
-        id: 'qlora-finetuning',
-        title: 'QLoRA Fine-tuning',
-        description: 'Implement QLoRA fine-tuning on a bigger model (LLaMA 2 7B, Mistral).',
-        status: 'Not Started',
-        tags: [
-            'Python',
-            'QLoRA',
-            'Parameter-Efficient Fine-tuning',
-            'Large LMs'
-        ],
-        githubLink: '#',
-        detailsLink: '/milestones/qlora-finetuning',
-        month: 5,
-        icon: '🔬',
-        keyLearnings: [
-            'Quantized low-rank adaptation techniques',
-            'Working with larger language models',
-            'Advanced fine-tuning strategies',
-            'Memory optimization for LLM training'
-        ],
-        isBonus: true
-    },
-    {
-        id: 'langchain-agent',
-        title: 'LangChain Memory Agent',
-        description: 'Build a LangChain Agent with a memory component (persistent knowledge).',
-        status: 'Not Started',
-        tags: [
-            'Python',
-            'LangChain',
-            'Agent',
-            'Memory Systems'
-        ],
-        githubLink: '#',
-        detailsLink: '/milestones/langchain-agent',
-        month: 5,
-        icon: '🧠',
-        keyLearnings: [
-            'LangChain agent development',
-            'Memory components for LLM applications',
-            'Persistent knowledge management',
-            'Advanced agent architecture'
-        ],
-        isBonus: true
+        icon: '🤖',
+        roadmapId: 'ai-agents'
     }
 ];
 }}),
@@ -294,7 +245,9 @@ const projects = [
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "MilestoneProvider": (()=>MilestoneProvider),
     "ProjectProvider": (()=>ProjectProvider),
+    "useMilestones": (()=>useMilestones),
     "useProjects": (()=>useProjects)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
@@ -304,45 +257,45 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$projects$2e$t
 ;
 ;
 ;
-const ProjectContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])(undefined);
-const ProjectProvider = ({ children })=>{
-    const [projects, setProjects] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$projects$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"]);
+const MilestoneContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])(undefined);
+const MilestoneProvider = ({ children })=>{
+    const [milestones, setMilestones] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$projects$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["milestones"]);
     const [stats, setStats] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         completed: 0,
         inProgress: 0,
         notStarted: 0,
-        total: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$projects$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"].length,
+        total: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$projects$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["milestones"].length,
         completedPercentage: 0
     });
-    // Calculate stats whenever projects change
+    // Calculate stats whenever milestones change
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const completed = projects.filter((p)=>p.status === 'Completed').length;
-        const inProgress = projects.filter((p)=>p.status === 'In Progress').length;
-        const notStarted = projects.filter((p)=>p.status === 'Not Started').length;
+        const completed = milestones.filter((p)=>p.status === 'Completed').length;
+        const inProgress = milestones.filter((p)=>p.status === 'In Progress').length;
+        const notStarted = milestones.filter((p)=>p.status === 'Not Started').length;
         setStats({
             completed,
             inProgress,
             notStarted,
-            total: projects.length,
-            completedPercentage: Math.round(completed / projects.length * 100)
+            total: milestones.length,
+            completedPercentage: Math.round(completed / milestones.length * 100)
         });
     }, [
-        projects
+        milestones
     ]);
-    const updateProjectStatus = (projectId, newStatus)=>{
-        setProjects((prevProjects)=>prevProjects.map((project)=>project.id === projectId ? {
-                    ...project,
+    const updateMilestoneStatus = (milestoneId, newStatus)=>{
+        setMilestones((prevMilestones)=>prevMilestones.map((milestone)=>milestone.id === milestoneId ? {
+                    ...milestone,
                     status: newStatus
-                } : project));
-        // Store updated projects in localStorage with current state
+                } : milestone));
+        // Store updated milestones in localStorage with current state
         try {
-            const updatedProjects = projects.map((p)=>p.id === projectId ? {
-                    ...p,
+            const updatedMilestones = milestones.map((m)=>m.id === milestoneId ? {
+                    ...m,
                     status: newStatus
-                } : p);
-            localStorage.setItem('projectStatuses', JSON.stringify(updatedProjects.map((p)=>({
-                    id: p.id,
-                    status: p.status
+                } : m);
+            localStorage.setItem('milestoneStatuses', JSON.stringify(updatedMilestones.map((m)=>({
+                    id: m.id,
+                    status: m.status
                 }))));
         } catch (error) {
             console.error('Error saving to localStorage:', error);
@@ -351,26 +304,26 @@ const ProjectProvider = ({ children })=>{
     // Load saved statuses from localStorage on initial load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         try {
-            const savedStatuses = localStorage.getItem('projectStatuses');
+            const savedStatuses = localStorage.getItem('milestoneStatuses') || localStorage.getItem('projectStatuses');
             if (savedStatuses) {
                 const parsedStatuses = JSON.parse(savedStatuses);
-                // Apply saved statuses to projects
-                setProjects((prevProjects)=>prevProjects.map((project)=>{
-                        const savedStatus = parsedStatuses.find((s)=>s.id === project.id);
+                // Apply saved statuses to milestones
+                setMilestones((prevMilestones)=>prevMilestones.map((milestone)=>{
+                        const savedStatus = parsedStatuses.find((s)=>s.id === milestone.id);
                         return savedStatus ? {
-                            ...project,
+                            ...milestone,
                             status: savedStatus.status
-                        } : project;
+                        } : milestone;
                     }));
             }
         } catch (error) {
             console.error('Error loading from localStorage:', error);
         }
     }, []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ProjectContext.Provider, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MilestoneContext.Provider, {
         value: {
-            projects,
-            updateProjectStatus,
+            milestones,
+            updateMilestoneStatus,
             stats
         },
         children: children
@@ -380,13 +333,15 @@ const ProjectProvider = ({ children })=>{
         columnNumber: 5
     }, this);
 };
-const useProjects = ()=>{
-    const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(ProjectContext);
+const ProjectProvider = MilestoneProvider;
+const useMilestones = ()=>{
+    const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(MilestoneContext);
     if (context === undefined) {
-        throw new Error('useProjects must be used within a ProjectProvider');
+        throw new Error('useMilestones must be used within a MilestoneProvider');
     }
     return context;
 };
+const useProjects = useMilestones;
 }}),
 "[project]/src/data/thesis.ts [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";

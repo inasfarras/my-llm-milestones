@@ -6,138 +6,68 @@ export interface RoadmapItem {
   technologies: string[];
   github: string;
   month: string;
-  projectId: string;
+  projectId: string; // link to the stage, not the small projects
 }
 
 export const roadmapData: RoadmapItem[] = [
   {
-    id: "textcrunch-roadmap",
-    title: "TextCrunch",
-    description: "Build a CLI app to tokenize text and count word frequencies. Focus on raw Python skills without AI assistance.",
-    status: "Completed",
-    technologies: ["Python", "NLP Basics"],
-    github: "",
-    month: "Month 1",
-    projectId: "textcrunch"
-  },
-  {
-    id: "spamguard-roadmap",
-    title: "SpamGuard",
-    description: "Train a text classifier to detect spam using scikit-learn. Code manually first, then compare with AI suggestions.",
-    status: "Not Started",
-    technologies: ["Python", "Scikit-learn", "Machine Learning"],
-    github: "",
-    month: "Month 1",
-    projectId: "spamguard"
-  },
-  {
-    id: "quickchat-roadmap",
-    title: "QuickChat",
-    description: "Build a simple chatbot using OpenAI API or HuggingFace API. Focus on clean API handling and error management in Python.",
+    id: "python-mastery",
+    title: "Python Mastery",
+    description: "Master core Python coding, OOP, file handling, web scraping, and APIs through multiple projects.",
     status: "In Progress",
-    technologies: ["Python", "OpenAI API", "HuggingFace API"],
+    technologies: ["Python", "OOP", "APIs", "File I/O"],
+    github: "",
+    month: "Month 1",
+    projectId: "python-mastery"
+  },
+  {
+    id: "ml-basics",
+    title: "Machine Learning Basics",
+    description: "Learn machine learning fundamentals: data preprocessing, model training, evaluation.",
+    status: "Not Started",
+    technologies: ["scikit-learn", "Pandas", "ML"],
     github: "",
     month: "Month 2",
-    projectId: "quickchat"
+    projectId: "ml-basics"
   },
   {
-    id: "promptforge-roadmap",
-    title: "PromptForge",
-    description: "Design few-shot and chain-of-thought prompt templates for smarter LLM outputs. Study prompt engineering best practices.",
+    id: "deep-learning",
+    title: "Deep Learning Foundations",
+    description: "Build and train deep learning models using PyTorch, CNNs, and RNNs.",
     status: "Not Started",
-    technologies: ["Prompt Engineering"],
-    github: "",
-    month: "Month 2",
-    projectId: "promptforge"
-  },
-  {
-    id: "pythonskill-rebuild-roadmap",
-    title: "Python Skill Rebuild",
-    description: "Daily hands-on Python practice (no AI allowed) focusing on OOP, API calling, error handling, and data pipelines.",
-    status: "Not Started",
-    technologies: ["Python"],
+    technologies: ["PyTorch", "Neural Networks"],
     github: "",
     month: "Month 3",
-    projectId: "pythonskill-rebuild"
+    projectId: "deep-learning"
   },
   {
-    id: "cloud-db-intro-roadmap",
-    title: "Cloud Database Basics",
-    description: "Learn how to create and connect AWS RDS PostgreSQL instances. Understand basic cloud database principles.",
+    id: "llm-finetuning",
+    title: "LLM Fine-tuning",
+    description: "Load, fine-tune, and optimize transformer models like GPT-2 with HuggingFace.",
     status: "Not Started",
-    technologies: ["AWS", "PostgreSQL", "Cloud Database"],
-    github: "",
-    month: "Month 3",
-    projectId: "cloud-db-intro"
-  },
-  {
-    id: "finetunex-roadmap",
-    title: "FineTuneX",
-    description: "Fine-tune a small model like T5 or DistilBERT for a specific task. Understand the fine-tuning process deeply.",
-    status: "Completed",
-    technologies: ["HuggingFace", "Fine-tuning", "Transformers"],
-    github: "",
-    month: "Month 3",
-    projectId: "finetunex"
-  },
-  {
-    id: "thesis-proposal-roadmap",
-    title: "Master Thesis Proposal",
-    description: "Research and submit official Master Thesis Proposal related to LLM specialization (Multi-Agent Smart RAG System).",
-    status: "Not Started",
-    technologies: ["Research Writing"],
-    github: "",
-    month: "Month 3",
-    projectId: "thesis-proposal"
-  },
-  {
-    id: "modelserve-roadmap",
-    title: "ModelServe",
-    description: "Deploy your fine-tuned model using FastAPI for API serving. Focus on clean backend service design.",
-    status: "Not Started",
-    technologies: ["FastAPI", "Model Serving"],
+    technologies: ["Transformers", "HuggingFace", "Fine-tuning"],
     github: "",
     month: "Month 4",
-    projectId: "modelserve"
+    projectId: "llm-finetuning"
   },
   {
-    id: "docuchat-roadmap",
-    title: "DocuChat",
-    description: "Build a simple RAG-based document QA bot using FAISS and LLMs. Focus on retrieval accuracy and dynamic document updates.",
+    id: "rag-systems",
+    title: "Retrieval-Augmented Generation (RAG)",
+    description: "Implement RAG-based QA systems using vector databases and LLMs.",
     status: "Not Started",
-    technologies: ["RAG", "FAISS", "Python"],
+    technologies: ["RAG", "Vector Databases", "LangChain"],
     github: "",
     month: "Month 4",
-    projectId: "docuchat"
+    projectId: "rag-systems"
   },
   {
-    id: "agenthive-roadmap",
-    title: "AgentHive",
-    description: "Build a Multi-Agent Smart RAG System where agents collaborate: Planner → Retriever → Reasoner → Synthesizer.",
+    id: "ai-agents",
+    title: "Multi-Agent AI Systems",
+    description: "Build AI agents that reason, retrieve, plan, and collaborate using LangChain/AutoGen.",
     status: "Not Started",
-    technologies: ["LangChain", "Multi-Agent Systems", "Advanced RAG"],
+    technologies: ["Multi-Agent AI", "LangChain", "AutoGen"],
     github: "",
     month: "Month 5",
-    projectId: "agenthive"
-  },
-  {
-    id: "software-engineering-mastery-roadmap",
-    title: "Software Engineering Concept Mastery",
-    description: "Study system design, clean code, architecture patterns, and testing strategies for solid backend and LLM projects.",
-    status: "Not Started",
-    technologies: ["Software Architecture", "Clean Code", "Design Patterns"],
-    github: "",
-    month: "Month 5",
-    projectId: "software-engineering-mastery"
-  },
-  {
-    id: "thesis-finalization-roadmap",
-    title: "Master Thesis Finalization",
-    description: "Complete experiments, writing, and defense preparation for Master Thesis (Multi-Agent Smart Retrieval System).",
-    status: "Not Started",
-    technologies: ["Research", "Experimentation", "Writing"],
-    github: "",
-    month: "Month 5",
-    projectId: "thesis-finalization"
+    projectId: "ai-agents"
   }
 ];
