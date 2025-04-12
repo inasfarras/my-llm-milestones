@@ -201,9 +201,9 @@ export default function MilestoneDetail({ milestone, onBack }: MilestoneDetailPr
       </div>
       
       {/* Main milestone card */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
         className="bg-background-darker rounded-xl border border-gray-800 overflow-hidden mb-12"
         role="article"
       >
