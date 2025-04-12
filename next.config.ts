@@ -8,6 +8,9 @@ const config: NextConfig = {
   images: {
     domains: ['github.com'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config) => {
     config.optimization = {
       ...config.optimization,

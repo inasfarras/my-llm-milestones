@@ -24,11 +24,11 @@ const statusBackgrounds = {
 };
 
 export default function RoadmapItem({ item, index, projectId }: RoadmapItemProps) {
-  const { updateProjectStatus } = useProjects();
+  const { updateMilestoneStatus } = useProjects();
   const isEven = index % 2 === 0;
   
   const handleStatusUpdate = (newStatus: 'Completed' | 'In Progress' | 'Not Started') => {
-    updateProjectStatus(projectId, newStatus);
+    updateMilestoneStatus(projectId, newStatus);
   };
   
   return (

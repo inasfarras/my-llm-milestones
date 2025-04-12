@@ -4,7 +4,6 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Milestone } from '@/data/projects';
 import { motion } from 'framer-motion';
 import { useMilestones } from '@/context/MilestoneContext';
-import { DocumentTextIcon, VideoCameraIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { useDropzone } from 'react-dropzone';
