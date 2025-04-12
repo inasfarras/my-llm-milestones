@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/inas%20farras/OneDrive%20-%20%E5%9C%8B%E7%AB%8B%E6%9D%B1%E8%8F%AF%E5%A4%A7%E5%AD%B8/%E6%A1%8C%E9%9D%A2/Project/milestone/src/app/milestones/layout.tsx"],"sourcesContent":["export default function MilestonesLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return (\r\n    <>{children}</>\r\n  );\r\n} "],"names":[],"mappings":";;;;;AAAe,SAAS,iBAAiB,EACvC,QAAQ,EAGT;IACC,qBACE;kBAAG;;AAEP","debugId":null}}]
-}
