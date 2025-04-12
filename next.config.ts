@@ -1,7 +1,31 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const config: NextConfig = {
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['@heroicons/react', 'framer-motion'],
+  },
+  images: {
+    domains: ['github.com'],
+  },
+  webpack: (config) => {
+    config.optimization = {
+      ...config.optimization,
+      splitChunks: {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        },
+      },
+    }
+    return config
+  },
+}
 
-export default nextConfig;
+export default config
